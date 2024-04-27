@@ -24,7 +24,7 @@ const SignUp = () => {
     console.log(name, email , password);
 
     try {
-      dispatch(signup(name, email, password));
+      dispatch(signup({name,email,password}));
       toast.success("Signup Successful");
     } catch (error) {
       console.error("Axios Error:", error);
